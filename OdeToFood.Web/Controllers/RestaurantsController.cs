@@ -10,6 +10,7 @@ namespace OdeToFood.Web.Controllers
 
         public RestaurantsController(IRestaurantData db)
         {
+            //Net core RestaurantController
             this.db = db;
         }
 

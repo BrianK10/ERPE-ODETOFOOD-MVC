@@ -13,6 +13,7 @@ namespace OdeToFood.Web.Controllers
         // GET: Greeting
         public ActionResult Index(string name)
         {
+            //Index ActionResult
             var model = new GreetingViewModel();
             model.Name = name ?? "no name";
             //var name = HttpContext.Request.QueryString["name"];
