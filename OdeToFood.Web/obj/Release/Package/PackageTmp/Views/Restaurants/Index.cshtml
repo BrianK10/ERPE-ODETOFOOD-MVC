@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OdeToFood.Data.Models.Restaurant>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.Message = "Hola Brian";
+    //Layout = null;
+
+    //Layout = "_TestLayout.cshtml"; (Permite cambiar el html de esta vista si queremos usar otra plantilla)
+}
+
+<h2>Total de restaurantes registrados: @(Model.Count())</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model)
+{ 
+    //Partial View
+    @Html.Partial("_RestaurantSummary", item)
+}
