@@ -13,7 +13,8 @@ namespace OdeToFood.Web.Controllers
 
         public HomeController(IRestaurantData db)
         {
-             
+             // Nueva caracteristica v1.0 - AzureDevops Edenred
+             //Usando Net Core
             this.db = db;
         }
         public ActionResult Index()
