@@ -101,6 +101,7 @@ namespace OdeToFood.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, FormCollection form)
         {
+            //Cambio en desde la rama dev
             db.Delete(id);
             return RedirectToAction("Index");
         }
